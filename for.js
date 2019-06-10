@@ -7,7 +7,7 @@ const customers = [
   { name: 'Chelsey Dietrich', age: 21, occupation: 'Retail', end: 1995 },
   { name: 'Mrs. Dennis Schulist', age: 31, occupation: 'Retail', end: 2008 },
   { name: 'Kurtis Weissnat', age: 48, occupation: 'Finance', end: 2006 },
-  { name: 'Nicholas Runolfsdottir', age: 67, occupation: 'Techonolgy', end: 2019 },
+  { name: 'Nicholas Runolfsdottir', age: 67, occupation: 'Technology', end: 2019 },
   { name: 'Glenna Reichert', age: 29, occupation: 'Sports', end: 2022 },
 ];
 
@@ -48,6 +48,7 @@ for (let i = 0; i < customers.length; i++) {
   const customer = customers[i];
   if (customer.occupation == "Technology") {
     techCustomer = customer;
+    break;
   };
 };
 console.log(techCustomer);
